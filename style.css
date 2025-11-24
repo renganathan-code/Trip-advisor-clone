@@ -423,6 +423,10 @@ body{
         flex-wrap: wrap;
     }
 
+    .like__images i{
+        display: none;
+    }
+
     .footer__one{
         margin: 0px 30px;
     }
@@ -442,7 +446,4 @@ body{
         padding: 10px;
     }
 
-    ::-webkit-scrollbar{
-        display: none;
-    }
 }
