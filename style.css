@@ -138,6 +138,7 @@ body{
 }
 .book__container__s1 img{
     width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -145,6 +146,9 @@ body{
     color: #002B11;
     margin: auto auto;
     text-align: center;
+    padding-bottom: 10px;
+    animation-name: zoom;
+    animation-duration: 2s;
 }
 
 .book__container__s2 h1{
@@ -162,6 +166,22 @@ body{
     padding: 15px 20px 15px 20px;
     border-radius: 30px;
     cursor: pointer;
+}
+
+@keyframes zoom{
+
+    0%{
+        transform: translateX(20px);
+    }
+
+    50%{
+        transform: scale(-10px);
+    }
+
+    100%{
+        transform: scale(0px);
+    }
+
 }
 
 .book__container__s2 i{
@@ -345,7 +365,7 @@ body{
 
 /*     Media Queries      */
 
-@media screen and (max-width:546px){
+@media screen and (max-width:768px){
 
     .body{
         font-size: 10px;
@@ -446,4 +466,62 @@ body{
         padding: 10px;
     }
 
+}
+
+@media (min-width:768px) and (max-width:992px) {
+
+    .navbar{
+        padding: 20px;
+    }
+
+    .icon__menu{
+        display: block;
+    }
+
+    .navbar__logo{
+        position: relative;
+        right: 250px;
+    }
+
+    .navbar__menus{
+        display: none;
+    }
+
+    .navbar__signup p{
+        display: none;
+    }
+
+    .recommend__search__s1{
+        display: inline-block;
+        width: 80%;
+    }
+
+    .book__container{
+        margin: 3% 10%;
+    }
+
+    .interest{
+        margin: 2% 10%;
+    }
+
+    .like__container{
+        margin: 2% 10%;
+        padding: 10px;
+    }
+
+    .like__container__s1{
+        flex-wrap: wrap;
+    }
+
+    .like__images{
+        width: 45%;
+    }
+
+    .like__images i{
+        display: none;
+    }
+
+    .footer__one{
+        margin: 2% 5%;
+    }
 }
